@@ -51,3 +51,43 @@ console.log(`I am approximately ${ageInHours} hours old`);
 console.log(`I will turn 100 in the year ${yearTurn100}`);
 
 // --------------------------------------------
+// 3. FUNCTIONS
+// --------------------------------------------
+console.log("\n--- 3. FUNCTIONS ---");
+
+function calculateArea(width, height) {
+    return width * height;
+}
+
+function celsiusToFahrenheit(celsius) {
+    return (celsius * 9/5) + 32;
+}
+
+function isEven(number) {
+    return number % 2 === 0;
+}
+
+function getInitials(name) {
+    return name
+        .split(" ")
+        .map(word => word[0].toUpperCase())
+        .join("");
+}
+
+function reverseString(str) {
+    return str.split("").reverse().join("");
+}
+
+function calculateTip(bill, tipPercent = 15) {
+    return (bill * tipPercent) / 100;
+}
+
+console.log("Area of 10x5:", calculateArea(10, 5));
+console.log("25°C in Fahrenheit:", celsiusToFahrenheit(25));
+console.log("Is 8 even?", isEven(8));
+console.log("Initials of Carlos Adenge:", getInitials("Carlos Adenge"));
+console.log("Reverse of 'JavaScript':", reverseString("JavaScript"));
+console.log("Tip on 2000 at 15%:", calculateTip(2000));
+console.log("Tip on 2000 at 20%:", calculateTip(2000, 20));
+
+// --------------------------------------------
