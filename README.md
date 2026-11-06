@@ -40,7 +40,7 @@ I practiced:
 
 ## Technologies Used
 - HTML5
-- JavaScript (ES6+)
+- JavaScript
 - Git & GitHub
 
 ## Author
