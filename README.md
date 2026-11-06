@@ -32,11 +32,45 @@ I practiced:
 - `.gitignore` – Ignored files
 
 ## What I Learned
-- Difference between `let` and `const`
-- How to write clean functions
-- How to use array methods (`map`, `filter`, `find`, `reduce`, `some`, `every`)
-- How to work with arrays of objects
-- How to build a simple calculator with error handling
+
+### 1. Variables and Data Types
+I learned the difference between `let` and `const`. 
+I use `const` when the value should not change, and `let` when the value can change later. 
+I also practiced checking data types with `typeof` and working with strings, numbers, booleans, arrays, and dates.
+
+### 2. Operators
+I practiced arithmetic operators (`+`, `-`, `*`, `/`, `%`, `**`) and comparison operators. 
+I now understand why I should always use `===` instead of `==` (strict equality is safer and avoids unexpected type conversion).
+
+### 3. Functions
+I learned three ways to write functions:
+- Function declaration
+- Function expression
+- Arrow functions
+
+I also practiced writing functions that **return** a value instead of only using `console.log`. 
+This is important because returning a value allows the result to be reused later.
+
+### 4. Control Flow
+I practiced `if/else`, `switch`, and loops (`for`, `while`). 
+I built a FizzBuzz program and a grade calculator using conditions. 
+This helped me understand how programs make decisions.
+
+### 5. Arrays and Array Methods
+I learned how to use important array methods:
+- `map()` – to transform data
+- `filter()` – to keep only certain items
+- `find()` – to get one specific item
+- `reduce()` – to calculate totals or averages
+- `some()` and `every()` – to check conditions
+
+These methods made working with lists of data much easier.
+
+### 6. Objects and Arrays of Objects
+I learned how to store related information inside objects (for example, a student with name, age, grade, and major). 
+I then worked with an **array of objects** to build a Student Grade Tracker. 
+This taught me how real data is usually structured in applications.
+
 
 ## Technologies Used
 - HTML5
