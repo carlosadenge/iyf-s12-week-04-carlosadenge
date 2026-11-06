@@ -173,3 +173,48 @@ console.log("10 % 3 =", calculate(10, "%", 3));
 console.log("2 ** 8 =", calculate(2, "**", 8));
 
 // --------------------------------------------
+// 6. ARRAYS & OBJECTS - STUDENT GRADE TRACKER
+// --------------------------------------------
+console.log("\n--- 6. STUDENT GRADE TRACKER ---");
+
+const students = [
+    { name: "Carlos Adenge", age: 22, grade: 88, major: "Computer Programming" },
+    { name: "Stacy Otieno", age: 21, grade: 92, major: "Computer Programming" },
+    { name: "Belinda Omondi", age: 23, grade: 79, major: "Business" },
+    { name: "Josphine Moraa", age: 20, grade: 95, major: "Computer Programming" },
+    { name: "Brian Kamau", age: 24, grade: 67, major: "Math" }
+];
+
+// 1. All student names
+const names = students.map(student => student.name);
+console.log("All names:", names);
+
+// 2. Students with grade > 80
+const highAchievers = students.filter(student => student.grade > 80);
+console.log("High achievers:", highAchievers);
+
+// 3. Find a specific student
+const carlos = students.find(student => student.name === "Carlos Adenge");
+console.log("Found Carlos:", carlos);
+
+// 4. Average grade
+const averageGrade = students.reduce((total, student) => total + student.grade, 0) / students.length;
+console.log("Average grade:", averageGrade.toFixed(1));
+
+// 5. Computer Programming majors only
+const csStudents = students.filter(student => student.major === "Computer Programming");
+console.log("CS Students:", csStudents);
+
+// 6. Sort by grade (highest first)
+const sortedByGrade = [...students].sort((a, b) => b.grade - a.grade);
+console.log("Sorted by grade:", sortedByGrade);
+
+// 7. Any student with grade > 90?
+const hasTopStudent = students.some(student => student.grade > 90);
+console.log("Has student above 90?", hasTopStudent);
+
+// 8. Are all students passing (grade >= 60)?
+const allPassing = students.every(student => student.grade >= 60);
+console.log("All students passing?", allPassing);
+
+console.log("\n===== END OF WEEK 4 PRACTICE =====");
