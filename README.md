@@ -46,3 +46,5 @@ I practiced:
 ## Author
 **Carlos Adenge**  
 GitHub: [@carlosadenge](https://github.com/carlosadenge)
+Email: [carlosadenge@gmail.com](mailto:carlosadenge@gmail.com)
+LinkedIn: [Carlos Adenge](https://www.linkedin.com/in/carlosadenge)
