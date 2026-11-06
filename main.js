@@ -91,3 +91,34 @@ console.log("Tip on 2000 at 15%:", calculateTip(2000));
 console.log("Tip on 2000 at 20%:", calculateTip(2000, 20));
 
 // --------------------------------------------
+// 4. CONTROL FLOW
+// --------------------------------------------
+console.log("\n--- 4. CONTROL FLOW ---");
+
+function getGrade(score) {
+    if (score >= 90) return "A";
+    else if (score >= 80) return "B";
+    else if (score >= 70) return "C";
+    else if (score >= 60) return "D";
+    else return "F";
+}
+
+console.log("Grade for 92:", getGrade(92));
+console.log("Grade for 75:", getGrade(75));
+console.log("Grade for 55:", getGrade(55));
+
+// FizzBuzz
+console.log("\nFizzBuzz (1-20):");
+for (let i = 1; i <= 20; i++) {
+    if (i % 3 === 0 && i % 5 === 0) {
+        console.log("FizzBuzz");
+    } else if (i % 3 === 0) {
+        console.log("Fizz");
+    } else if (i % 5 === 0) {
+        console.log("Buzz");
+    } else {
+        console.log(i);
+    }
+}
+
+// --------------------------------------------
