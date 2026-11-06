@@ -13,3 +13,14 @@ function findLargestLoop(arr) {
     return largest;
 }
 
+// Method 2: Using reduce
+function findLargestReduce(arr) {
+    return arr.reduce((max, current) => {
+        return current > max ? current : max;
+    }, arr[0]);
+}
+
+const numbers = [12, 45, 7, 89, 23, 56, 3];
+
+console.log("Largest (loop):", findLargestLoop(numbers));     // 89
+console.log("Largest (reduce):", findLargestReduce(numbers)); // 89
