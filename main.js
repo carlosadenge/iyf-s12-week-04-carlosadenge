@@ -27,3 +27,27 @@ console.log("Type of age:", typeof age);
 console.log("Type of isStudent:", typeof isStudent);
 
 // --------------------------------------------
+// 2. DATA TYPES & OPERATORS
+// --------------------------------------------
+console.log("\n--- 2. OPERATORS ---");
+
+let a = 15;
+let b = 4;
+
+console.log("15 + 4 =", a + b);
+console.log("15 - 4 =", a - b);
+console.log("15 * 4 =", a * b);
+console.log("15 / 4 =", a / b);
+console.log("15 % 4 =", a % b);
+console.log("15 ** 2 =", a ** 2);
+
+// Age calculations
+let ageInDays = age * 365;
+let ageInHours = ageInDays * 24;
+let yearTurn100 = 2026 + (100 - age);
+
+console.log(`I am approximately ${ageInDays} days old`);
+console.log(`I am approximately ${ageInHours} hours old`);
+console.log(`I will turn 100 in the year ${yearTurn100}`);
+
+// --------------------------------------------
